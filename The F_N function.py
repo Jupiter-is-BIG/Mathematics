@@ -70,10 +70,7 @@ def check(b,c,k):
             conclusion=0
             i=i+1
     return conclusion 
-    
-    
-    
-    
+           
 def hola(a,pika):
     worker=a+1
     while 1>0:
@@ -85,13 +82,6 @@ def hola(a,pika):
             worker=worker+1
     return theans
 
-
-def printer(a,b,c):
-    i=a
-    while i<b+1:
-        print("F(",c,",",i,") = ",hola(i,c))
-        i=i+1
-A=int(input("What should be the lower bound? "))
-B=int(input("What should be the upper bound? "))
-C=int(input("What perfect power are you interested in? "))
-printer(A,B,C)
+A=int(input("Value of N in F_N(x): "))
+B=int(input("Value of x in F_N(x): "))
+print("F_"+A+"("+B+")=",hola(B,A))
