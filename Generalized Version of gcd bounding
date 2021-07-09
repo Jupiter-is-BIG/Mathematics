@@ -1,0 +1,23 @@
+import math
+from math import gcd
+from sympy.ntheory.factor_ import totient
+from fractions import gcd
+from functools import reduce
+def tot(m):
+    i=0
+    count=0
+    while i<m:
+        if math.gcd(i-i**5,m)==1:
+            count=count+1
+        else:
+            pass
+        i=i+1
+    return count
+def f(n):
+    return 2*n+5 #poly
+n=1
+l=[]
+while n<250:
+    l.append(tot(f(n)))
+    n=n+1
+print(reduce(gcd,l),l)
